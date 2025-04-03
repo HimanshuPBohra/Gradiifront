@@ -275,27 +275,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section (Corrected) */}
       <section className="flex flex-col items-center py-16 bg-green-50">
         <p className="text-3xl font-semibold text-green-800">Teachers Love {appName}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mt-10 px-4">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-              "{appName} has been a game-changer for grading and providing feedback."
+              &quot;{appName} has been a game-changer for grading and providing feedback.&quot;
             </p>
             <p className="text-green-700 font-semibold mt-4">Emily Carter</p>
             <p className="text-gray-600">High School English Teacher</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-              "The AI-powered grading is accurate and saves me hours."
+              &quot;The AI-powered grading is accurate and saves me hours.&quot;
             </p>
             <p className="text-green-700 font-semibold mt-4">Dr. Susan Chen</p>
             <p className="text-gray-600">Department Head, CS</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-              "It’s made grading so much easier and more efficient."
+              &quot;It’s made grading so much easier and more efficient.&quot;
             </p>
             <p className="text-green-700 font-semibold mt-4">Michael Roberts</p>
             <p className="text-gray-600">Professor, Mathematics</p>
