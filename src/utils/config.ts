@@ -6,7 +6,7 @@ export const serverURL = "http://localhost:8800";
 export const primaryColor = "#9A4CFF";
 export const currencySymbol = "₹";
 export const currency = "INR";
-export const apkURL = "https://github.com/aqeelshamz/envato-src/raw/4bcb5c0e1332306e84f9a165aaea1734fb381957/evaluateai/apk/EvaluateAI.apk";
+export const apkURL = "https://github.com";
 
 export const onboardingSteps = [
     {
