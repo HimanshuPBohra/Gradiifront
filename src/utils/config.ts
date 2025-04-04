@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const appName = "EvaluateAI";
+export const appName = "Gradii";
 export const appURL = "http://localhost:3000";
 export const serverURL = "http://localhost:8800";
 export const primaryColor = "#9A4CFF";
