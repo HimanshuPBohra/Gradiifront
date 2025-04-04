@@ -1,6 +1,7 @@
 "use client";
 import { apkURL, appName } from "@/utils/config";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FiAward, FiClock, FiDatabase, FiLayers, FiPlus, FiZap } from "react-icons/fi";
@@ -65,7 +66,7 @@ export default function Home() {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <img src="/logo.png" alt="logo" className="mr-2 h-8" />
+          <Image src="/logo.png" alt={`${appName} logo`} width={32} height={32} className="mr-2" />
           <h1 className="text-2xl font-semibold text-green-700">{appName}</h1>
         </motion.div>
         {isLoggedIn ? (
@@ -153,7 +154,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="text-green-500 mb-6 bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center">
+              <div className="text-green-500 mb-6 bg-green-50 w-14 h-14A rounded-xl flex items-center justify-center">
                 <FiZap size={28} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-green-800">AI that grades like a pro</h3>
@@ -200,9 +201,11 @@ export default function Home() {
             className="relative rounded-2xl overflow-hidden shadow-2xl mb-24 group"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <img
+            <Image
               src="/landing/landing_1.png"
               alt="Dashboard Preview"
+              width={1200}
+              height={600}
               className="w-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 flex items-end justify-center p-8">
@@ -343,9 +346,11 @@ export default function Home() {
               whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <img 
+              <Image 
                 src="/landing/landing_2.png" 
                 alt="Upload Interface" 
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -368,9 +373,11 @@ export default function Home() {
               whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <img 
+              <Image 
                 src="/landing/landing_3.png" 
                 alt="Evaluation Interface" 
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -445,9 +452,11 @@ export default function Home() {
               whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <img 
+              <Image 
                 src="/landing/landing_4.png" 
                 alt="Review Interface" 
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -497,7 +506,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-32 h-32 bg-green-50 rounded-bl-[100px] group-hover:bg-green-100 transition-colors duration-300"></div>
             <div className="relative z-10">
               <p className="text-gray-600 italic text-lg leading-relaxed mb-8">
-                "{appName} has transformed my grading process. The AI feedback is incredibly accurate and saves me hours each week!"
+                {appName} has transformed my grading process. The AI feedback is incredibly accurate and saves me hours each week!
               </p>
               <div className="flex items-center">
                 <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mr-4 text-green-700 font-bold text-xl">
@@ -521,7 +530,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-20 h-20 bg-green-100 rounded-bl-full z-0"></div>
             <div className="relative z-10">
               <p className="text-gray-600 italic text-lg">
-                "The AI-powered grading is accurate and saves me hours. My students appreciate the consistent feedback."
+                The AI-powered grading is accurate and saves me hours. My students appreciate the consistent feedback.
               </p>
               <div className="mt-6 flex items-center">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -545,7 +554,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-20 h-20 bg-green-100 rounded-bl-full z-0"></div>
             <div className="relative z-10">
               <p className="text-gray-600 italic text-lg">
-                "It's made grading so much easier and more efficient. The analytics help me identify areas where students need more support."
+                It&apos;s made grading so much easier and more efficient. The analytics help me identify areas where students need more support.
               </p>
               <div className="mt-6 flex items-center">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -675,7 +684,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <img src="/logo.png" alt="logo" className="mr-2 h-8" />
+              <Image src="/logo.png" alt={`${appName} logo`} width={32} height={32} className="mr-2" />
               <h3 className="text-xl font-semibold">{appName}</h3>
             </div>
             <p className="text-green-200">
