@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const appName = "Gradii";
 export const appURL = "https://gradii.vercel.app";
-export const serverURL = "https://backend-ahrx6.ondigitalocean.app";
+export const serverURL = "https://backendapi.gradii.ai";
 export const primaryColor = "#9A4CFF";
 export const currencySymbol = "₹";
 export const currency = "INR";
